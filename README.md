@@ -1,1 +1,1 @@
-# Projects from Mobile Application Development class
+Projects from university classes and for fun, enjoy!
