@@ -43,7 +43,25 @@ enum ShapeFill: String {
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource{
     
-   
+    func requestPhotoLibraryPermission() {
+           PHPhotoLibrary.requestAuthorization { status in
+               switch status {
+               case .authorized:
+                   break;
+               case .denied, .restricted:
+                   return
+               case .notDetermined:
+                   while(status != .authorized){
+                       print("waiting for permission")
+                   }
+                   break;
+               case .limited:
+                   print("ok")
+               @unknown default:
+                   break
+               }
+           }
+       }
     
     var drawingNames: [String] = ["Blank"];
     
@@ -156,6 +174,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIImagePick
     }
     
     @IBAction func saveImage(_ sender: UIBarButtonItem) {
+        requestPhotoLibraryPermission()
         let temp = createdShapes
         let newImage = drawingView.convertToImage();
         let saveAlert = UIAlertController(title: "Enter Image Name", message: "Example: Puppy:", preferredStyle: .alert)

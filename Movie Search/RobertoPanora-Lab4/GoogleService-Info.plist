@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC8tLp425VTkVjDmj4yxQ7y7vG_hDfF4ek</string>
+	<key>GCM_SENDER_ID</key>
+	<string>94473580403</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.wustl.cse438.RobertoPanora-Lab4</string>
+	<key>PROJECT_ID</key>
+	<string>movie-search-app-debfc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>movie-search-app-debfc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:94473580403:ios:6ab40b6e5fcc2562671f06</string>
+</dict>
+</plist>

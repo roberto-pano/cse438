@@ -4,6 +4,15 @@ Roberto Panora - 490453 - CSE438
 YOU NEED TO SELECT A COLOR BEFORE DRAWING!!!!! Just in case haha
 
 
+
+REGRADE: Added two lines into Info.plst that ask for permission (they were left out by mistake)
+
+Added the security method to the top of ViewController and then called it from the @IBAction saveImage function to prompt the first time then it will work. The reason I didn't include it was because I tested on two devices where it worked and it must have gotten lost in translation, but it was fully functional on my end for two devices
+
+
+
+
+
 Creative Portion:
 
 I have a save button which then leads to my two creative portions:

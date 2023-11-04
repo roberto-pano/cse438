@@ -34,5 +34,10 @@
 			<string>Background</string>
 		</dict>
 	</array>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>We need access to your photo library to upload images.</string>
+
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>We need access to add photos to your library.</string>
 </dict>
 </plist>
